@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "home": "Start",
+    "mosque": "Moschee",
+    "quranSchool": "Koranschule",
+    "community": "Verein",
+    "news": "Aktuelles",
+    "services": "Beratung & Dienstleistungen",
+    "donate": "Spenden",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "membership": "Mitglied werden"
+  },
+  "common": {
+    "donateNow": "Jetzt spenden",
+    "becomeMember": "Mitglied werden",
+    "readMore": "Mehr erfahren",
+    "viewAll": "Alle anzeigen",
+    "learnMore": "Mehr erfahren",
+    "getDirections": "Route planen",
+    "skipToContent": "Zum Inhalt springen",
+    "language": "Sprache"
+  },
+  "hero": {
+    "eyebrow": "An-Nur Moschee",
+    "title": "Glaube, Wissen und Gemeinschaft in Wiesbaden",
+    "description": "An-Nur ist ein Ort für Gebet, islamische Bildung, soziale Unterstützung, kulturellen Austausch und Gemeinschaftsleben.",
+    "primaryCta": "Gebetszeiten ansehen",
+    "secondaryCta": "Moschee besuchen",
+    "donateCta": "Spenden",
+    "memberCta": "Mitglied werden"
+  },
+  "prayerTimes": {
+    "heading": "Gebetszeiten",
+    "subheading": "Live aus unserem Mawaqit-Profil",
+    "fajr": "Fadschr",
+    "sunrise": "Sonnenaufgang",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Ischa",
+    "jumuah": "Freitagsgebet (Jumu'ah)",
+    "iqama": "Iqama",
+    "nextPrayer": "Nächstes Gebet",
+    "countdownLabel": "verbleibend",
+    "unavailable": "Live-Gebetszeiten sind derzeit nicht verfügbar.",
+    "openMawaqit": "Mawaqit-Seite öffnen",
+    "hijriLoading": "Hidschri-Datum wird geladen …"
+  },
+  "announcements": {
+    "heading": "Wichtige Mitteilung"
+  },
+  "services": {
+    "heading": "Unsere Angebote",
+    "subheading": "Von täglichen Gebeten bis zu sozialer Unterstützung — hier finden Sie eine Übersicht unserer Angebote."
+  },
+  "quranSchool": {
+    "heading": "Koranschule",
+    "subheading": "Unterricht für Kinder, Jugendliche und Erwachsene",
+    "registerCta": "Jetzt anmelden",
+    "seasonWinter": "Winter",
+    "seasonSummer": "Sommer",
+    "seasonYearRound": "Ganzjährig"
+  },
+  "donation": {
+    "heading": "Spendenaktion",
+    "pendingFigures": "Verifizierte Zahlen folgen in Kürze.",
+    "transparencyLink": "Zur Transparenz-Seite",
+    "progressPending": "Spendenstand wird noch bestätigt"
+  },
+  "news": {
+    "heading": "Aktuelles",
+    "empty": "Derzeit keine Neuigkeiten."
+  },
+  "about": {
+    "heading": "Über An-Nur",
+    "linkMosque": "Unsere Moschee",
+    "linkAssociation": "Unser Verein",
+    "linkHistory": "Unsere Geschichte",
+    "linkMembership": "Mitglied werden",
+    "body": "An-Nur ist die Moschee des Afghanisch Islamischer Kulturverein Wiesbaden und Umgebung e.V., gegründet 2007. Der Verein bringt Menschen afghanischer Herkunft und alle, die sich für die Kultur interessieren, zusammen und setzt sich für Glaube, Bildung, kulturellen Austausch und gesellschaftliche Integration ein — bei gleichzeitiger Wahrung afghanischer Traditionen."
+  },
+  "visit": {
+    "heading": "Besuchen Sie uns",
+    "address": "Adresse",
+    "publicTransport": "Öffentliche Verkehrsmittel",
+    "parking": "Parkmöglichkeiten",
+    "accessibility": "Barrierefreiheit",
+    "womensArea": "Gebetsraum für Frauen",
+    "contactHours": "Kontaktzeiten",
+    "loadMap": "Karte laden"
+  },
+  "footer": {
+    "description": "Afghanisch Islamischer Kulturverein Wiesbaden und Umgebung e.V.",
+    "navigation": "Navigation",
+    "contact": "Kontakt",
+    "legal": "Rechtliches",
+    "impressum": "Impressum",
+    "privacy": "Datenschutzerklärung",
+    "cookieSettings": "Cookie-Einstellungen",
+    "newsletter": "Ankündigungen abonnieren",
+    "prayerTimes": "Gebetszeiten"
+  },
+  "announcementBar": {
+    "close": "Schließen"
+  }
+}

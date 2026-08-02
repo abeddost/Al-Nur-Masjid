@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mosque-green: #123c32;
+  --color-mosque-green-dark: #0b2a23;
+  --color-ivory: #f7f3e8;
+  --color-charcoal: #171a1f;
+  --color-gold: #c3a15f;
+  --color-sage: #e7ede8;
+  --color-sage-dark: #cddacf;
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+
+  --animate-fade-rise: fade-rise 0.6s ease-out both;
+
+  @keyframes fade-rise {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Low-contrast Islamic geometric pattern, used as a subtle background texture only. */
+.pattern-geometric {
+  background-image: radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--color-mosque-green) 8%, transparent) 1px, transparent 0);
+  background-size: 24px 24px;
+}

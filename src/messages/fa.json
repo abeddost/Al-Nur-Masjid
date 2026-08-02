@@ -1,0 +1,108 @@
+{
+  "_reviewNote": "DRAFT — machine-assisted translation, not yet reviewed by a native Dari/Persian speaker. Verify before publishing.",
+  "nav": {
+    "home": "خانه",
+    "mosque": "مسجد",
+    "quranSchool": "مکتب قرآن",
+    "community": "انجمن",
+    "news": "اخبار و رویدادها",
+    "services": "خدمات",
+    "donate": "کمک‌های مالی",
+    "about": "درباره ما",
+    "contact": "تماس",
+    "membership": "عضویت"
+  },
+  "common": {
+    "donateNow": "اکنون کمک کنید",
+    "becomeMember": "عضو شوید",
+    "readMore": "بیشتر بخوانید",
+    "viewAll": "مشاهده همه",
+    "learnMore": "بیشتر بدانید",
+    "getDirections": "مسیر یابی",
+    "skipToContent": "رفتن به محتوا",
+    "language": "زبان"
+  },
+  "hero": {
+    "eyebrow": "مسجد النور",
+    "title": "ایمان، دانش و همبستگی در ویسبادن",
+    "description": "النور مکانی برای نماز، آموزش اسلامی، حمایت اجتماعی، تبادل فرهنگی و زندگی جمعی است.",
+    "primaryCta": "اوقات نماز",
+    "secondaryCta": "بازدید از مسجد",
+    "donateCta": "کمک مالی",
+    "memberCta": "عضو شوید"
+  },
+  "prayerTimes": {
+    "heading": "اوقات نماز",
+    "subheading": "به صورت زنده از پروفایل Mawaqit",
+    "fajr": "فجر",
+    "sunrise": "طلوع آفتاب",
+    "dhuhr": "ظهر",
+    "asr": "عصر",
+    "maghrib": "مغرب",
+    "isha": "عشاء",
+    "jumuah": "نماز جمعه",
+    "iqama": "اقامه",
+    "nextPrayer": "نماز بعدی",
+    "countdownLabel": "باقیمانده",
+    "unavailable": "اوقات نماز زنده در حال حاضر در دسترس نیست.",
+    "openMawaqit": "باز کردن صفحه Mawaqit",
+    "hijriLoading": "در حال بارگذاری تاریخ هجری …"
+  },
+  "announcements": {
+    "heading": "اطلاعیه مهم"
+  },
+  "services": {
+    "heading": "خدمات ما",
+    "subheading": "از نمازهای روزانه تا حمایت اجتماعی — نمای کلی خدمات النور."
+  },
+  "quranSchool": {
+    "heading": "مکتب قرآن",
+    "subheading": "کلاس‌ها برای کودکان، نوجوانان و بزرگسالان",
+    "registerCta": "ثبت‌نام کنید",
+    "seasonWinter": "زمستان",
+    "seasonSummer": "تابستان",
+    "seasonYearRound": "تمام سال"
+  },
+  "donation": {
+    "heading": "کمپاین کمک‌های مالی",
+    "pendingFigures": "ارقام تأییدشده به‌زودی منتشر می‌شود.",
+    "transparencyLink": "گزارش شفافیت",
+    "progressPending": "روند تأمین مالی در انتظار تأیید"
+  },
+  "news": {
+    "heading": "آخرین اخبار",
+    "empty": "فعلاً خبری موجود نیست."
+  },
+  "about": {
+    "heading": "درباره النور",
+    "linkMosque": "مسجد ما",
+    "linkAssociation": "انجمن ما",
+    "linkHistory": "تاریخچه ما",
+    "linkMembership": "عضو شوید",
+    "body": "النور مسجد انجمن فرهنگی اسلامی افغان‌ها ویسبادن و حومه است که در سال ۲۰۰۷ تأسیس شد. این انجمن افراد با تبار افغان و همه علاقه‌مندان به فرهنگ را گرد هم می‌آورد و برای ایمان، آموزش، تبادل فرهنگی و ادغام در جامعه آلمان تلاش می‌کند — در حالی که سنت‌های افغانی را نیز حفظ می‌کند."
+  },
+  "visit": {
+    "heading": "دیدار با ما",
+    "address": "آدرس",
+    "publicTransport": "حمل‌ونقل عمومی",
+    "parking": "پارکینگ",
+    "accessibility": "دسترسی برای معلولین",
+    "womensArea": "محل نماز بانوان",
+    "contactHours": "ساعات تماس",
+    "loadMap": "بارگذاری نقشه"
+  },
+  "footer": {
+    "description": "انجمن فرهنگی اسلامی افغان‌ها ویسبادن و حومه",
+    "navigation": "منو",
+    "contact": "تماس",
+    "legal": "اطلاعات حقوقی",
+    "impressum": "اطلاعات ناشر",
+    "privacy": "سیاست حفظ حریم خصوصی",
+    "cookieSettings": "تنظیمات کوکی",
+    "newsletter": "عضویت در اطلاعیه‌ها",
+    "prayerTimes": "اوقات نماز"
+  },
+  "announcementBar": {
+    "close": "بستن"
+  }
+}

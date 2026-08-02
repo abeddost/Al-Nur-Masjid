@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "home": "Home",
+    "mosque": "Mosque",
+    "quranSchool": "Quran School",
+    "community": "Community",
+    "news": "News & Events",
+    "services": "Services",
+    "donate": "Donations",
+    "about": "About Us",
+    "contact": "Contact",
+    "membership": "Become a Member"
+  },
+  "common": {
+    "donateNow": "Donate Now",
+    "becomeMember": "Become a Member",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "getDirections": "Get Directions",
+    "skipToContent": "Skip to content",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "An-Nur Mosque",
+    "title": "Faith, knowledge and community in Wiesbaden",
+    "description": "An-Nur is a place for prayer, Islamic education, social support, cultural exchange, and community life.",
+    "primaryCta": "View Prayer Times",
+    "secondaryCta": "Visit the Mosque",
+    "donateCta": "Donate",
+    "memberCta": "Become a Member"
+  },
+  "prayerTimes": {
+    "heading": "Prayer Times",
+    "subheading": "Live from our Mawaqit profile",
+    "fajr": "Fajr",
+    "sunrise": "Sunrise",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha",
+    "jumuah": "Friday Prayer (Jumu'ah)",
+    "iqama": "Iqama",
+    "nextPrayer": "Next Prayer",
+    "countdownLabel": "remaining",
+    "unavailable": "Live prayer times are temporarily unavailable.",
+    "openMawaqit": "Open Mawaqit page",
+    "hijriLoading": "Loading Hijri date …"
+  },
+  "announcements": {
+    "heading": "Important Announcement"
+  },
+  "services": {
+    "heading": "Our Services",
+    "subheading": "From daily prayers to social assistance — an overview of what An-Nur offers."
+  },
+  "quranSchool": {
+    "heading": "Quran School",
+    "subheading": "Classes for children, youth, and adults",
+    "registerCta": "Register Now",
+    "seasonWinter": "Winter",
+    "seasonSummer": "Summer",
+    "seasonYearRound": "Year-round"
+  },
+  "donation": {
+    "heading": "Donation Campaign",
+    "pendingFigures": "Verified figures will be published soon.",
+    "transparencyLink": "View transparency report",
+    "progressPending": "Funding progress pending confirmation"
+  },
+  "news": {
+    "heading": "Latest News",
+    "empty": "No news yet."
+  },
+  "about": {
+    "heading": "About An-Nur",
+    "linkMosque": "Our Mosque",
+    "linkAssociation": "Our Association",
+    "linkHistory": "Our History",
+    "linkMembership": "Become a Member",
+    "body": "An-Nur is the mosque of the Afghan Islamic Cultural Association Wiesbaden and Surroundings e.V., founded in 2007. The association brings together people of Afghan origin and anyone interested in the culture, working for faith, education, cultural exchange, and integration into German society — while preserving Afghan traditions."
+  },
+  "visit": {
+    "heading": "Visit Us",
+    "address": "Address",
+    "publicTransport": "Public Transport",
+    "parking": "Parking",
+    "accessibility": "Accessibility",
+    "womensArea": "Women's Prayer Area",
+    "contactHours": "Contact Hours",
+    "loadMap": "Load map"
+  },
+  "footer": {
+    "description": "Afghan Islamic Cultural Association Wiesbaden and Surroundings e.V.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "legal": "Legal",
+    "impressum": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "cookieSettings": "Cookie Settings",
+    "newsletter": "Subscribe to announcements",
+    "prayerTimes": "Prayer Times"
+  },
+  "announcementBar": {
+    "close": "Close"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "_reviewNote": "DRAFT — machine-assisted translation, not yet reviewed by a native Pashto speaker. Verify before publishing.",
+  "nav": {
+    "home": "کور",
+    "mosque": "جومات",
+    "quranSchool": "قرآني ښوونځی",
+    "community": "ټولنه",
+    "news": "خبرونه او پیښې",
+    "services": "خدمتونه",
+    "donate": "مرستې",
+    "about": "زموږ په اړه",
+    "contact": "اړیکه",
+    "membership": "غړیتوب"
+  },
+  "common": {
+    "donateNow": "همدا اوس مرسته وکړئ",
+    "becomeMember": "غړی شئ",
+    "readMore": "نور ولولئ",
+    "viewAll": "ټول وګورئ",
+    "learnMore": "نور زده کړئ",
+    "getDirections": "لار مومنه",
+    "skipToContent": "منځپانګې ته لاړ شئ",
+    "language": "ژبه"
+  },
+  "hero": {
+    "eyebrow": "د النور جومات",
+    "title": "په ویسبادن کې ایمان، پوهه او ټولنه",
+    "description": "النور د لمانځه، اسلامي زده‌کړو، ټولنیزې مرستې، کلتوري تبادلې او ټولنیز ژوند ځای دی.",
+    "primaryCta": "د لمانځه وختونه وګورئ",
+    "secondaryCta": "له جومات سره لیدنه",
+    "donateCta": "مرسته",
+    "memberCta": "غړی شئ"
+  },
+  "prayerTimes": {
+    "heading": "د لمانځه وختونه",
+    "subheading": "ژوندۍ معلومات د Mawaqit پروفایل څخه",
+    "fajr": "فجر",
+    "sunrise": "لمر خاته",
+    "dhuhr": "غرمه",
+    "asr": "مازدیګر",
+    "maghrib": "ماښام",
+    "isha": "ماخستن",
+    "jumuah": "د جمعې لمونځ",
+    "iqama": "اقامت",
+    "nextPrayer": "راتلونکی لمونځ",
+    "countdownLabel": "پاتې",
+    "unavailable": "ژوندي د لمانځه وختونه دمخې شتون نلري.",
+    "openMawaqit": "د Mawaqit پاڼه پرانیزئ",
+    "hijriLoading": "د هجري نیټې بارول …"
+  },
+  "announcements": {
+    "heading": "مهم خبرتیا"
+  },
+  "services": {
+    "heading": "زموږ خدمتونه",
+    "subheading": "د ورځنیو لمونځونو نه تر ټولنیزې مرستې پورې — د النور خدمتونو کتنه."
+  },
+  "quranSchool": {
+    "heading": "قرآني ښوونځی",
+    "subheading": "ټولګي د ماشومانو، ځوانانو او لویانو لپاره",
+    "registerCta": "نوم لیکنه",
+    "seasonWinter": "ژمی",
+    "seasonSummer": "دوبی",
+    "seasonYearRound": "کلنی"
+  },
+  "donation": {
+    "heading": "د مرستې کمپاین",
+    "pendingFigures": "تایید شوي شمېرې به ژر خپاره شي.",
+    "transparencyLink": "د روڼتیا راپور",
+    "progressPending": "د تمویل پرمختګ د تایید په تمه"
+  },
+  "news": {
+    "heading": "وروستي خبرونه",
+    "empty": "اوس مهال هیڅ خبر نشته."
+  },
+  "about": {
+    "heading": "د النور په اړه",
+    "linkMosque": "زموږ جومات",
+    "linkAssociation": "زموږ ټولنه",
+    "linkHistory": "زموږ تاریخ",
+    "linkMembership": "غړی شئ",
+    "body": "النور د افغانانو اسلامي کلتوري ټولنې جومات دی چې په ۲۰۰۷ کال کې تاسیس شوی. دا ټولنه د افغان اصلیت خلک او د دې کلتور ټول لیوالان سره یوځای کوي او د ایمان، زده‌کړو، کلتوري تبادلې او په آلماني ټولنه کې د ادغام لپاره کار کوي — پداسې حال کې چې افغاني دودونه هم ساتي."
+  },
+  "visit": {
+    "heading": "زموږ سره لیدنه",
+    "address": "پته",
+    "publicTransport": "عامه ترانسپورت",
+    "parking": "پارکینګ",
+    "accessibility": "د معلولینو لپاره لاسرسی",
+    "womensArea": "د ښځو د لمانځه ځای",
+    "contactHours": "د اړیکې ساعتونه",
+    "loadMap": "نقشه بارول"
+  },
+  "footer": {
+    "description": "د افغانانو اسلامي کلتوري ټولنه ویسبادن",
+    "navigation": "لارښود",
+    "contact": "اړیکه",
+    "legal": "حقوقي",
+    "impressum": "خپرندوی معلومات",
+    "privacy": "د محرمیت تګلاره",
+    "cookieSettings": "د کوکي امستنې",
+    "newsletter": "د خبرتیاوو ګډون",
+    "prayerTimes": "د لمانځه وختونه"
+  },
+  "announcementBar": {
+    "close": "بندول"
+  }
+}
