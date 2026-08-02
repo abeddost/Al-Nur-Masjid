@@ -20,7 +20,8 @@
     "learnMore": "بیشتر بدانید",
     "getDirections": "مسیر یابی",
     "skipToContent": "رفتن به محتوا",
-    "language": "زبان"
+    "language": "زبان",
+    "menu": "منو"
   },
   "hero": {
     "eyebrow": "مسجد النور",
@@ -104,5 +105,19 @@
   },
   "announcementBar": {
     "close": "بستن"
+  },
+  "weekday": {
+    "mon": "دوشنبه",
+    "tue": "سه‌شنبه",
+    "wed": "چهارشنبه",
+    "thu": "پنجشنبه",
+    "fri": "جمعه",
+    "sat": "شنبه",
+    "sun": "یکشنبه"
+  },
+  "audience": {
+    "children": "کودکان",
+    "youth": "نوجوانان",
+    "adults": "بزرگسالان"
   }
 }

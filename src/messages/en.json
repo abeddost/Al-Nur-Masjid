@@ -19,7 +19,8 @@
     "learnMore": "Learn More",
     "getDirections": "Get Directions",
     "skipToContent": "Skip to content",
-    "language": "Language"
+    "language": "Language",
+    "menu": "Menu"
   },
   "hero": {
     "eyebrow": "An-Nur Mosque",
@@ -103,5 +104,19 @@
   },
   "announcementBar": {
     "close": "Close"
+  },
+  "weekday": {
+    "mon": "Monday",
+    "tue": "Tuesday",
+    "wed": "Wednesday",
+    "thu": "Thursday",
+    "fri": "Friday",
+    "sat": "Saturday",
+    "sun": "Sunday"
+  },
+  "audience": {
+    "children": "Children",
+    "youth": "Youth",
+    "adults": "Adults"
   }
 }

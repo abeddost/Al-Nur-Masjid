@@ -22,7 +22,7 @@ export async function AnnouncementCard() {
     <section className="py-10">
       <Container>
         <Reveal>
-          <div className={`flex items-start gap-4 rounded-2xl border p-6 ${variantClass[announcement.variant]}`}>
+          <div className={`flex items-start gap-4 rounded-3xl border p-6 shadow-sm sm:p-7 ${variantClass[announcement.variant]}`}>
             <Megaphone className="mt-0.5 h-6 w-6 shrink-0 text-mosque-green-dark" aria-hidden="true" />
             <div>
               <p className="text-xs font-semibold uppercase tracking-wide text-mosque-green-dark/70">

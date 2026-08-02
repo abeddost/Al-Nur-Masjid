@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { Manrope, Vazirmatn } from "next/font/google";
+import { Fraunces, Manrope, Vazirmatn } from "next/font/google";
 import { MotionConfig } from "framer-motion";
 import { routing, isRtl } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
@@ -19,6 +19,13 @@ const vazirmatn = Vazirmatn({
   subsets: ["arabic"],
   variable: "--font-vazirmatn",
   display: "swap",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  display: "swap",
+  weight: ["500", "600", "700"],
 });
 
 export function generateStaticParams() {
@@ -43,13 +50,23 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
   const dir = isRtl(locale) ? "rtl" : "ltr";
-  const fontVariable = isRtl(locale) ? vazirmatn.variable : manrope.variable;
+  const fontVariables = isRtl(locale)
+    ? vazirmatn.variable
+    : `${manrope.variable} ${fraunces.variable}`;
 
   return (
-    <html lang={locale} dir={dir} className={fontVariable}>
+    <html lang={locale} dir={dir} className={fontVariables}>
       <body
         className="flex min-h-screen flex-col font-sans antialiased"
-        style={{ "--font-body": isRtl(locale) ? "var(--font-vazirmatn)" : "var(--font-manrope)" } as React.CSSProperties}
+        style={
+          {
+            "--font-body": isRtl(locale) ? "var(--font-vazirmatn)" : "var(--font-manrope)",
+            // Persian/Pashto headings use a heavier Vazirmatn weight rather than a separate
+            // display face — a dedicated calligraphic font is reserved for short decorative
+            // accents only, never for full headings/body text.
+            "--font-display": isRtl(locale) ? "var(--font-vazirmatn)" : "var(--font-fraunces)",
+          } as React.CSSProperties
+        }
       >
         <NextIntlClientProvider>
           <MotionConfig reducedMotion="user">

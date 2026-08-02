@@ -32,8 +32,8 @@ export async function Footer() {
         <div>
           <p className="text-sm font-semibold uppercase tracking-wide text-gold">{t("navigation")}</p>
           <ul className="mt-3 space-y-2 text-sm text-ivory/85">
-            {navItems.map((item) => (
-              <li key={item.href}>
+            {navItems.map((item, i) => (
+              <li key={`${item.href}-${i}`}>
                 <Link href={item.href} className="hover:text-gold">
                   {item.label}
                 </Link>

@@ -43,10 +43,10 @@ export async function Header() {
             An-Nur
           </Link>
 
-          <nav aria-label="Main" className="hidden items-center gap-6 lg:flex">
-            {navItems.map((item) => (
+          <nav aria-label="Main" className="hidden items-center gap-4 xl:flex xl:gap-5">
+            {navItems.map((item, i) => (
               <Link
-                key={item.href}
+                key={`${item.href}-${i}`}
                 href={item.href}
                 className="text-sm font-medium text-mosque-green-dark hover:text-gold"
               >
@@ -55,12 +55,12 @@ export async function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <CompactNextPrayer mawaqitSlug={siteSettings.mawaqitSlug} />
-            <div className="hidden lg:block">
+            <div className="hidden xl:block">
               <LanguageSwitcher />
             </div>
-            <Button href="/spenden" variant="secondary" className="hidden sm:inline-flex">
+            <Button href="/spenden" variant="secondary" className="hidden px-4 sm:inline-flex">
               {t("donateNow")}
             </Button>
             <MobileMenu items={navItems} />

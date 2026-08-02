@@ -1,12 +1,12 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { ExternalLink } from "lucide-react";
-import { getMawaqitData, getNextPrayer, PRAYER_NAMES, addMinutes } from "@/lib/mawaqit/get-mawaqit-data";
-import { getBerlinNow } from "@/lib/mawaqit/berlin-time";
+import { PRAYER_NAMES, addMinutes } from "@/lib/mawaqit/get-mawaqit-data";
+import { getNextPrayerInfo, type NextPrayerInfo } from "@/lib/mawaqit/get-next-prayer-info";
 import { getSiteSettings } from "@/lib/payload/queries";
 import type { Locale } from "@/i18n/routing";
-import { Countdown } from "@/components/domain/prayer-times/Countdown";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 function hijriDate(locale: string, hijriAdjustmentDays: number): string {
   const adjusted = new Date();
@@ -30,7 +30,7 @@ export async function PrayerTimesSection() {
   const locale = (await getLocale()) as Locale;
   const t = await getTranslations("prayerTimes");
   const siteSettings = await getSiteSettings(locale);
-  const data = await getMawaqitData(siteSettings.mawaqitSlug);
+  const info = await getNextPrayerInfo(siteSettings.mawaqitSlug);
   const mawaqitUrl = `https://mawaqit.net/en/${siteSettings.mawaqitSlug}`;
 
   const gregorianDate = new Intl.DateTimeFormat(locale, {
@@ -41,21 +41,22 @@ export async function PrayerTimesSection() {
   }).format(new Date());
 
   return (
-    <section id="gebetszeiten" className="relative overflow-hidden bg-mosque-green py-16 text-ivory sm:py-20">
-      <div className="pattern-geometric absolute inset-0 opacity-[0.06]" aria-hidden="true" />
+    <section id="gebetszeiten" className="relative overflow-hidden bg-mosque-green py-16 text-ivory sm:py-24">
+      <div className="pattern-geometric absolute inset-0 opacity-[0.08]" aria-hidden="true" />
       <Container className="relative">
         <Reveal>
-          <div className="mb-10 flex flex-col items-center text-center">
-            <h2 className="text-3xl font-bold sm:text-4xl">{t("heading")}</h2>
-            <p className="mt-2 text-ivory/80">{t("subheading")}</p>
-            <p className="mt-4 text-sm text-ivory/70">
-              {gregorianDate} · {data ? hijriDate(locale, data.hijriAdjustment) : t("hijriLoading")}
-            </p>
-          </div>
+          <SectionHeading
+            eyebrow={t("subheading")}
+            heading={t("heading")}
+            tone="light"
+            subheading={`${gregorianDate} · ${info ? hijriDate(locale, info.data.hijriAdjustment) : t("hijriLoading")}`}
+          />
         </Reveal>
 
-        {data ? (
-          <PrayerTimesGrid data={data} />
+        {info ? (
+          <div className="mt-10">
+            <PrayerTimesGrid info={info} />
+          </div>
         ) : (
           <Reveal>
             <div className="mx-auto flex max-w-md flex-col items-center gap-4 rounded-2xl bg-ivory/10 p-8 text-center">
@@ -76,14 +77,9 @@ export async function PrayerTimesSection() {
   );
 }
 
-async function PrayerTimesGrid({ data }: { data: NonNullable<Awaited<ReturnType<typeof getMawaqitData>>> }) {
+async function PrayerTimesGrid({ info }: { info: NextPrayerInfo }) {
   const t = await getTranslations("prayerTimes");
-  const { hours, minutes, isFriday } = getBerlinNow();
-  const nowMinutes = hours * 60 + minutes;
-  const next = getNextPrayer(data, nowMinutes, isFriday);
-  const nowSeconds = hours * 3600 + minutes * 60;
-  const targetSeconds = next.minutesSinceMidnight * 60;
-  const initialSecondsRemaining = Math.max(0, targetSeconds - nowSeconds);
+  const { data, next } = info;
 
   const rows = [
     { key: "fajr", label: t("fajr"), time: data.times[0], iqama: addMinutes(data.times[0], data.iqamaOffsets[0]) },
@@ -96,16 +92,16 @@ async function PrayerTimesGrid({ data }: { data: NonNullable<Awaited<ReturnType<
 
   return (
     <div>
-      <Reveal delay={0.1}>
-        <div className="mx-auto mb-8 flex max-w-sm flex-col items-center rounded-2xl bg-ivory p-6 text-center text-mosque-green-dark shadow-lg">
-          <p className="text-xs font-semibold uppercase tracking-wide text-gold">
-            {t("nextPrayer")}: {next.name === "jumua" ? t("jumuah") : t(next.name as "fajr" | "dhuhr" | "asr" | "maghrib" | "isha")}
-          </p>
-          <Countdown initialSecondsRemaining={initialSecondsRemaining} />
-        </div>
+      <Reveal>
+        <p className="mb-8 text-center text-sm font-medium text-ivory/75">
+          {t("nextPrayer")}:{" "}
+          <span className="font-semibold text-gold">
+            {next.name === "jumua" ? t("jumuah") : t(next.name as "fajr" | "dhuhr" | "asr" | "maghrib" | "isha")}
+          </span>
+        </p>
       </Reveal>
 
-      <Reveal delay={0.2}>
+      <Reveal delay={0.1}>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
           {rows.map((row) => (
             <div

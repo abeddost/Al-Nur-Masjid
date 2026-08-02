@@ -19,7 +19,8 @@
     "learnMore": "Mehr erfahren",
     "getDirections": "Route planen",
     "skipToContent": "Zum Inhalt springen",
-    "language": "Sprache"
+    "language": "Sprache",
+    "menu": "Menü"
   },
   "hero": {
     "eyebrow": "An-Nur Moschee",
@@ -103,5 +104,19 @@
   },
   "announcementBar": {
     "close": "Schließen"
+  },
+  "weekday": {
+    "mon": "Montag",
+    "tue": "Dienstag",
+    "wed": "Mittwoch",
+    "thu": "Donnerstag",
+    "fri": "Freitag",
+    "sat": "Samstag",
+    "sun": "Sonntag"
+  },
+  "audience": {
+    "children": "Kinder",
+    "youth": "Jugendliche",
+    "adults": "Erwachsene"
   }
 }

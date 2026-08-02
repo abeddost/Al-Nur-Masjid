@@ -20,7 +20,8 @@
     "learnMore": "نور زده کړئ",
     "getDirections": "لار مومنه",
     "skipToContent": "منځپانګې ته لاړ شئ",
-    "language": "ژبه"
+    "language": "ژبه",
+    "menu": "مینو"
   },
   "hero": {
     "eyebrow": "د النور جومات",
@@ -104,5 +105,19 @@
   },
   "announcementBar": {
     "close": "بندول"
+  },
+  "weekday": {
+    "mon": "دوشنبه",
+    "tue": "سه‌شنبه",
+    "wed": "چارشنبه",
+    "thu": "پنجشنبه",
+    "fri": "جمعه",
+    "sat": "شنبه",
+    "sun": "یکشنبه"
+  },
+  "audience": {
+    "children": "ماشومان",
+    "youth": "ځوانان",
+    "adults": "لویان"
   }
 }
