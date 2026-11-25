@@ -1,3 +1,4 @@
+import DesignerCredit from "@/components/DesignerCredit";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
@@ -85,6 +86,9 @@ export async function Footer() {
       </Container>
       <div className="border-t border-ivory/10 py-5 text-center text-xs text-ivory/60">
         © {new Date().getFullYear()} {siteSettings.legalName}
+        <div className="mt-3 flex justify-center">
+          <DesignerCredit site="al-nur-masjid" />
+        </div>
       </div>
     </footer>
   );
